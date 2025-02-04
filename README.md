@@ -52,3 +52,15 @@ The compiler is implemented in **six phases**, each building on the previous one
 1. **Build the Project**:  
    ```bash  
    mvn clean install  
+2. **Run the Compiler**:  
+   ```bash  
+   scala lib/spl.jar <compiler-phase> tests/hello.spl  
+   Example:
+   ```bash  
+   scala lib/spl.jar 1 tests/hello.spl  
+3. **Check Solutions**:  
+   ```bash  
+   scala spl-solution.jar <compiler-phase> tests/hello.spl    
+   Example:
+   ```bash  
+   scala spl-solution.jar 1 tests/hello.spl   
